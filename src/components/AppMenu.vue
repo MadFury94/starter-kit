@@ -38,9 +38,10 @@
 
 <script setup>
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Projects", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Contact ", href: "#" },
 ];
 </script>
