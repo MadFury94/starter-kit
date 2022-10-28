@@ -1,6 +1,6 @@
 <template>
   <header
-    class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+    class="relative flex items-center justify-center h-screen mb-12 overflow-hidden pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8"
   >
     <div
       class="relative z-30 p-5 text-2xl text-white bg-app-primary bg-opacity-20 rounded-xl"
@@ -26,7 +26,7 @@
           <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
           <img
             class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-            src="/public/map.png"
+            src="/map.png"
             alt=""
           />
         </div>
@@ -38,13 +38,9 @@
       muted
       class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
     >
-      <source src="/public/procurevid.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      <source src="/procurevid.mp4" type="video/mp4" />
     </video>
   </header>
-  <div class="bg-white">
-    <div class="relative overflow-hidden"></div>
-  </div>
 </template>
 
 <script src></script>
