@@ -46,7 +46,7 @@
             </div>
           </div>
           <!-- button -->
-          <div class="hidden md:flex items-center space-x-1">
+          <div class="hidden md:flex items-center space-x-1 lg:px-10">
             <button
               class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
             >
@@ -93,21 +93,21 @@
       <a
         href=""
         class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
-        >Home</a
+        >HOME</a
       >
       <a
         href=""
         class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
-        >About</a
+        >ABOUT</a
       >
       <a
         href=""
         class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
-        >Services</a
+        >SERVICES</a
       ><a
         href=""
         class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
-        >Projects</a
+        >PROJECTSS</a
       >
 
       <button
