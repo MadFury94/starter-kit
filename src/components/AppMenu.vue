@@ -16,32 +16,32 @@
               </a>
             </div>
             <!-- menu -->
-            <div class="hidden md:flex items-center space-x-1">
+            <div class="hidden md:flex items-center space-x-1 font-semibold">
               <a
                 href="/"
                 class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
-                >Home</a
+                >HOME</a
               >
               <a
                 href="/"
                 class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
-                >About</a
+                >ABOUT</a
               >
               <a
                 href="/"
                 class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
-                >Services</a
+                >SERVICES</a
               >
               <a
                 href="/"
                 class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
-                >Projects</a
+                >PROJECTS</a
               >
 
               <a
                 href="/"
                 class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
-                >Contact Us</a
+                >CONTACT US</a
               >
             </div>
           </div>
