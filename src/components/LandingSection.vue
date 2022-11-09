@@ -1,46 +1,43 @@
 <template>
-  <header
-    class="relative flex items-center justify-center h-screen mb-12 overflow-hidden pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8"
-  >
-    <div
-      class="relative z-30 p-5 text-2xl text-white bg-app-primary bg-opacity-20 rounded-xl"
-    >
-      <h1
-        class="mt-4 text-4xl font-bold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
-      >
-        <span class="block">Priziangori </span>
-        <span
-          class="block bg-gradient-to-r from-app-primary to-app-secondary bg-clip-text pb-3 text-transparent sm:pb-5"
-        >
-          Global Ltd</span
-        >
-      </h1>
-      <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
-        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
-      </p>
-      <div class="mt-12 -mb-16 sm:-mb-48 lg:relative lg:m-0">
-        <div
-          class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0"
-        >
-          <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-          <img
-            class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-            src="/map.png"
-            alt=""
-          />
+  <section>
+    <!-- two divs for image and writeup -->
+    <div class="grid lg:grid-cols-2 md:grid-cols-1">
+      <div class="relative shadow-2xl shadow-app-secondary sm:rounded">
+        <div class="lg:absolute inset-0">
+          <img class="" src="/oilworker.jpg" />
         </div>
       </div>
+      <div class="py-20 lg:pr-48 text-justify px-20">
+        <h1 class="font-semibold text-3xl text-app-primary">
+          Priziangori Global
+        </h1>
+        <p class="pb-4">
+          Lorem ipsum dolor sit amet. Cum tenetur atque vel distinctio galisum
+          eum distinctio pariatur et esse recusandae sed voluptatem temporibus
+          At dolor dolores? Aut veniam esse ut officiis reprehenderit non
+          deserunt omnis est sapiente illo vel vitae facere non galisum sunt.
+        </p>
+        <button
+          class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-4 h-6"
+          >
+            <path
+              d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+            />
+            <path
+              d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+            />
+          </svg>
+          <span class="px-1"> Read more</span>
+        </button>
+      </div>
     </div>
-    <video
-      autoplay
-      loop
-      muted
-      class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-    >
-      <source src="/procurevid.mp4" type="video/mp4" />
-    </video>
-  </header>
+  </section>
 </template>
 
-<script src></script>
+<script setup></script>

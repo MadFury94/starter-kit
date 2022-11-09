@@ -2,7 +2,6 @@
 import { RouterLink, RouterView } from "vue-router";
 import AppFooter from "./components/AppFooter.vue";
 import AppMenu from "./components/AppMenu.vue";
-import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-1- container mx-auto py-20 px-4 lg:px-20">
+  <div class="px-1- container mx-auto py-20 px-4 lg:px-80 md:px-30">
     <div class="flex items-center gap-x-10 gap-y-10">
       <div class="flex gap-4 overflow-x-scroll">
         <div v-for="(item, index) in logos" :key="index">

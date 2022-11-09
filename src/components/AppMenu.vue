@@ -1,37 +1,160 @@
 <template>
-  <div>
-    <div class="bg-transparent pt-6">
-      <nav
-        class="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
-        aria-label="Global"
-      >
-        <div class="flex flex-1 items-center">
-          <div class="flex w-full items-center justify-between md:w-auto">
-            <a href="#">
-              <img class="h-8 w-auto sm:h-10" src="/proc.jpg" alt="" />
-            </a>
+  <nav>
+    <!-- desktop Menu -->
+    <div class="bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between">
+          <!-- menu -->
+          <div class="flex space-x-4">
+            <!-- logo -->
+            <div class="flex items-center py-5 px-2">
+              <a href="" class="flex items-center space-x-2 py-5 px-2">
+                <img class="w-8 h-10" src="/proc.jpg" />
+                <span class="text-2xl font-extrabold text-white"
+                  >Procurement</span
+                >
+              </a>
+            </div>
+            <!-- menu -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="/"
+                class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                >Home</a
+              >
+              <a
+                href="/"
+                class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                >About</a
+              >
+              <a
+                href="/"
+                class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                >Services</a
+              >
+              <a
+                href="/"
+                class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                >Projects</a
+              >
+
+              <a
+                href="/"
+                class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                >Contact Us</a
+              >
+            </div>
           </div>
-          <div class="hidden space-x-8 md:ml-10 md:flex">
-            <a
-              v-for="item in navigation"
-              :key="item.name"
-              :href="item.href"
-              class="text-base font-medium text-app-secondary hover:text-app-primary"
-              >{{ item.name }}</a
+          <!-- button -->
+          <div class="hidden md:flex items-center space-x-1">
+            <button
+              class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-6"
+              >
+                <path
+                  d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                />
+              </svg>
+              <span class="px-1"> Message us</span>
+            </button>
+          </div>
+          <!-- button show mobile menu -->
+          <div class="md:hidden flex items-center">
+            <button @click="showMobileMenu = !showMobileMenu" class="py-5 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 text-app-primary"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
-  </div>
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-white px-4" v-show="showMobileMenu">
+      <a
+        href=""
+        class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
+        >Home</a
+      >
+      <a
+        href=""
+        class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
+        >About</a
+      >
+      <a
+        href=""
+        class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
+        >Services</a
+      ><a
+        href=""
+        class="block py-2 px-4 bg-white hover:text-app-secondary hover:font-semibold"
+        >Projects</a
+      >
+
+      <button
+        class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-4 h-6"
+        >
+          <path
+            d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+          />
+          <path
+            d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+          />
+        </svg>
+        <span class="px-1"> Message us</span>
+      </button>
+    </div>
+  </nav>
+  <div class="p-8 text-2xl font-extrabold text-center"></div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+const showMobileMenu = ref(false);
+
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Services", href: "#" },
-  { name: "Contact ", href: "#" },
+  {
+    path: "/",
+    name: "Home",
+    title: "home",
+  },
+  {
+    path: "/",
+    name: "About",
+    title: "about",
+  },
+  {
+    path: "/",
+    name: "Services",
+    title: "services",
+  },
 ];
 </script>
+
+<style></style>

@@ -9,7 +9,7 @@ import ContactOption from "../components/ContactOption.vue";
 <template>
   <main>
     <LandingSection />
-    <ListServices />
+    <!-- <ListServices /> -->
     <ImageSection />
     <LogoArea />
     <ContactOption />
