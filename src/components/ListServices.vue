@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <section class="bg-white flex lg:px-40 md:px-20">
       <div class="rounded bg-white lg:px-10 border-2 shadow-2xl">
@@ -84,7 +84,7 @@ const serviceList = [
 
 <style lang="scss" scoped></style>
 
-<!-- <template>
+<! <template>
   <div>
     <section
       class="grid gap-y-10 px-10 py-20 md:grid-cols-2 lg:grid-cols-3 pt-1 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
@@ -139,3 +139,4 @@ const serviceList = [
   },
 ];
 </script> -->
+-->
