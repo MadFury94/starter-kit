@@ -7,9 +7,9 @@
           <!-- menu -->
           <div class="flex space-x-4">
             <!-- logo -->
-            <div class="flex items-center py-5 px-2">
+            <div class="flex items-center px-2">
               <a href="" class="flex items-center space-x-2 py-5 px-2">
-                <img class="w-8 h-10" src="/proc.jpg" />
+                <img class="w-8 h-14" src="/proc.jpg" />
                 <span class="text-2xl font-extrabold text-white"
                   >Procurement</span
                 >
@@ -68,7 +68,10 @@
           </div>
           <!-- button show mobile menu -->
           <div class="md:hidden flex items-center">
-            <button @click="showMobileMenu = !showMobileMenu" class="py-5 px-2">
+            <button
+              @click="showMobileMenu = !showMobileMenu"
+              class="py-5 px-16"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

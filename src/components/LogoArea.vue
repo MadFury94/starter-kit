@@ -1,7 +1,9 @@
 <template>
-  <div class="px-1- container mx-auto py-20 px-4 lg:px-80 md:px-30">
-    <div class="flex items-center gap-x-10 gap-y-10">
-      <div class="flex gap-4 overflow-x-scroll">
+  <div class="px-1- container mx-auto lg:px-16 py-20 w-auto">
+    <div class="items-center gap-x-10 gap-y-10">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 lg:w-full md:grid-cols-3 px-20 pr-px sm:px-20 sm:pr-16"
+      >
         <div v-for="(item, index) in logos" :key="index">
           <img class="h-20" :alt="item.alt" :src="`/logos/${item.src}`" />
         </div>
@@ -35,14 +37,6 @@ const logos = [
   {
     src: "Agip.jpg",
     alt: "Agip",
-  },
-  {
-    src: "shell.jpg",
-    alt: "Eroton",
-  },
-  {
-    src: "newcross-600x600-1.png",
-    alt: "Newcross",
   },
 ];
 </script>
