@@ -58,7 +58,7 @@ const logos = [
     alt: "Agip",
   },
 ];
-const modalActive = ref(true);
+const modalActive = ref(false);
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
 };

@@ -56,7 +56,7 @@
 import { ref } from "vue";
 import BaseModal from "./BaseModal.vue";
 
-const modalActive = ref(true);
+const modalActive = ref(false);
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
 };
