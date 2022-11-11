@@ -30,7 +30,7 @@
           <div class="grid place-items-center py-4">
             <div class="">
               <button
-                class="flex bg-transaprent font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white text-white"
+                class="flex bg-transaprent font-semibold p-2 hover:bg-app-secondary border-app-secondary-500 border-2 rounded-lg hover:rounded-lg hover:text-white text-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

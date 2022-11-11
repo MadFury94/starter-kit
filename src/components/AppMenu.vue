@@ -48,6 +48,7 @@
           <!-- button -->
           <div class="hidden md:flex items-center space-x-1 lg:px-10">
             <button
+              @click="showMobileMenu = !showMobileMenu"
               class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
             >
               <svg
@@ -141,23 +142,23 @@ import { ref } from "vue";
 
 const showMobileMenu = ref(false);
 
-const navigation = [
-  {
-    path: "/",
-    name: "Home",
-    title: "home",
-  },
-  {
-    path: "/",
-    name: "About",
-    title: "about",
-  },
-  {
-    path: "/",
-    name: "Services",
-    title: "services",
-  },
-];
+// const navigation = [
+//   {
+//     path: "/",
+//     name: "Home",
+//     title: "home",
+//   },
+//   {
+//     path: "/",
+//     name: "About",
+//     title: "about",
+//   },
+//   {
+//     path: "/",
+//     name: "Services",
+//     title: "services",
+//   },
+// ];
 </script>
 
 <style></style>

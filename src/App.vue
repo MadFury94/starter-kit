@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import AppFooter from "./components/AppFooter.vue";
 import AppMenu from "./components/AppMenu.vue";
+// import BaseModalVue from "./components/BaseModal.vue";
 </script>
 
 <template>

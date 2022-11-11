@@ -27,27 +27,37 @@
         </p>
         <div class="grid place-items-center">
           <button
-            class="flex bg-white font-semibold p-2 border-2 border-black rounded-lg hover:bg-app-secondary hover:text-white"
+            class="flex bg-white border-app-secondary-500 font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary text-app-secondary-500 hover:text-white"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-4 h-6"
+            <i
+              @click="toggleModal"
+              class="fa fa-info-circle duration-150 cursor-pointer px-1"
+              aria-hidden="true"
+              ><span class="px-1">About Us</span></i
             >
-              <path
-                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
-              />
-              <path
-                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-              />
-            </svg>
-            <span class="px-1"> Read more</span>
           </button>
         </div>
+        <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
+          <p class="">
+            We at PrrLorem ipsum dolor sit amet. Cum tenetur atque vel
+            distinctio galisum eum distinctio pariatur et esse recusandae sed
+            voluptatem temporibus At dolor dolores? Aut veniam esse ut officiis
+            reprehenderit non deserunt omnis est sapiente illo vel vitae facere
+            non galisum sunt.
+          </p>
+          <div class="grid place-content-center"></div>
+        </BaseModal>
       </div>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import BaseModal from "./BaseModal.vue";
+
+const modalActive = ref(true);
+const toggleModal = () => {
+  modalActive.value = !modalActive.value;
+};
+</script>
