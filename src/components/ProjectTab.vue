@@ -1,16 +1,32 @@
 <template>
-  <div class="px-10 py-16 sm:px-10">
-    <h1 class="text-2xl font-bold border-l border-app-primary-500">
-      Related Services
-    </h1>
-    <p class="">
-      We have in our employ experienced and professionally qualified personnel
-      in fabrication and construction field of services. Our fabrication
-      facility is located in
-      <span class="" v-html="companyInformation.addresses.address2"> </span>
-    </p>
+  <div class="grid lg:grid-cols-2 md:grid-cols-1">
+    <div class="relative shadow-2xl shadow-app-secondary sm:rounded">
+      <div class="inset-0">
+        <img class="" src="/Smoking-Flare.png" />
+      </div>
+    </div>
+    <div class="py-10 lg:pr-48 px-20">
+      <h1
+        class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+      >
+        Related
+      </h1>
+      <h2
+        class="text-app-secondary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+      >
+        Services
+      </h2>
+
+      <p class="">
+        We have in our employ experienced and professionally qualified personnel
+        in fabrication and construction field of services. Our fabrication
+        facility is located in
+        <span class="" v-html="companyInformation.addresses.address2"> </span>
+      </p>
+    </div>
   </div>
-  <div class="mx-auto w-full max-w-4xl px-2 py-16 sm:px-2">
+
+  <div class="mx-auto w-full max-w-4xl px-2 py-4 sm:px-2">
     <TabGroup>
       <TabList
         class="flex space-x-1 border-t-8 border-app-primary-500 bg-[#f4f4f4] p-1"
@@ -47,8 +63,12 @@
           <div
             class="shadow-lg cursor-pointer group hover:text-app-primary-900 hover:font-semibold transition-all duration-1000"
           >
-            <img class="w-full h-96" :src="item.image" />
-            {{ item.text }}
+            <img class="w-full h-96 pb-4" :src="item.image" />
+            <h1
+              class="text-sm leading-5 text-app-primary-900 text-center font-semibold py-4"
+            >
+              {{ item.text }}
+            </h1>
           </div>
         </TabPanel>
       </TabPanels>
@@ -65,17 +85,17 @@ const services = ref([
   {
     title: "PIPELINE CONSTRUCTION",
     image: "./pipe.jpg",
-    text: "nim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    text: "THIS IN CAPS THIS ON CAPS THIS IN CAPS THIS ON CAPS ",
   },
   {
     title: "FLARE GAS METERING SYSTEM",
     image: "./flaregas.jpg",
-    text: "nim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    text: "THIS IN CAPS THIS ON CAPS",
   },
   {
     title: "FABRICATION OF SMOKELESS FLARES",
     image: "./airgas.jpg",
-    text: "nim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.",
+    text: "THIS IN CAPS THIS ON CAPS",
   },
 ]);
 </script>

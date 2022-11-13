@@ -16,4 +16,8 @@ export const companyInformation = ref({
     email1: "anbenig@yahoo.com",
     email2: "info@starterkit.com",
   },
+  name: {
+    Companyname: "Priziangori",
+    Companyname2: "Global",
+  },
 });

@@ -9,14 +9,14 @@
       </div>
       <div class="py-20 lg:pr-48 px-20">
         <h1
-          class="text-app-primary text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+          class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          Priziangori
+          {{ companyInformation.name.Companyname }}
         </h1>
         <h2
-          class="text-app-secondary text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+          class="text-app-secondary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          Global
+          {{ companyInformation.name.Companyname2 }}
         </h2>
 
         <p class="pb-4">
@@ -27,7 +27,7 @@
         </p>
         <div class="grid place-items-center">
           <button
-            class="flex bg-white border-app-secondary-500 font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary text-app-secondary-500 hover:text-white"
+            class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
           >
             <i
               @click="toggleModal"
@@ -55,6 +55,7 @@
 <script setup>
 import { ref } from "vue";
 import BaseModal from "./BaseModal.vue";
+import { companyInformation } from "../../public/store/store";
 
 const modalActive = ref(false);
 const toggleModal = () => {

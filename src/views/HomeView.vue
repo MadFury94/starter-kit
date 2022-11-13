@@ -10,7 +10,7 @@ import ContactArea from "../components/ContactArea.vue";
 </script>
 
 <template>
-  <main>
+  <main class="lg:px-10">
     <LandingSection />
     <!-- <ListServices /> -->
     <ImageSection />
