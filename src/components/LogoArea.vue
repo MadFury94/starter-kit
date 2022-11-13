@@ -31,6 +31,7 @@
 <script setup>
 import BaseModal from "./BaseModal.vue";
 import { ref } from "vue";
+import ButtonComponent from "./ButtonComponent.vue";
 
 const logos = [
   {
