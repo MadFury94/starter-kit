@@ -6,6 +6,7 @@
       </div>
     </div>
     <div class="py-10 lg:pr-48 px-20">
+      <SmallButton class="pr-72 lg:pr-64" />
       <h1
         class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
       >
@@ -23,6 +24,18 @@
         facility is located in
         <span class="" v-html="companyInformation.addresses.address2"> </span>
       </p>
+      <div class="px-2 py-2">
+        <button
+          class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
+        >
+          <i
+            @click="toggleModal"
+            class="fa fa-info-circle duration-150 cursor-pointer px-1"
+            aria-hidden="true"
+            ><span class="px-1">About Us</span></i
+          >
+        </button>
+      </div>
     </div>
   </div>
 
@@ -80,6 +93,7 @@
 import { ref } from "vue";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 import { companyInformation } from "../../public/store/store";
+import SmallButton from "./SmallButton.vue";
 
 const services = ref([
   {

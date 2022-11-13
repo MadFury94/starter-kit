@@ -7,7 +7,9 @@
           <img class="" src="/oilworker.jpg" />
         </div>
       </div>
+
       <div class="py-20 lg:pr-48 px-20">
+        <SmallButton class="pr-72 lg:pr-64" />
         <h1
           class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
@@ -25,7 +27,7 @@
           At dolor dolores? Aut veniam esse ut officiis reprehenderit non
           deserunt omnis est sapiente illo vel vitae facere non galisum sunt.
         </p>
-        <div class="grid place-items-center">
+        <div class="px-3">
           <button
             class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
           >
@@ -36,6 +38,8 @@
               ><span class="px-1">About Us</span></i
             >
           </button>
+
+          <!-- <ButtonComponent> </ButtonComponent> -->
         </div>
         <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
           <p class="">
@@ -56,6 +60,8 @@
 import { ref } from "vue";
 import BaseModal from "./BaseModal.vue";
 import { companyInformation } from "../../public/store/store";
+import ButtonComponent from "./ButtonComponent.vue";
+import SmallButton from "./SmallButton.vue";
 
 const modalActive = ref(false);
 const toggleModal = () => {

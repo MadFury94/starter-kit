@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white grid place-items-center gap-x-4 pt-4 pb-4">
+  <div class="bg-white grid place-items-center pt-4 pb-4">
     <button
       class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
     >
