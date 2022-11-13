@@ -35,7 +35,7 @@
               @click="toggleModal"
               class="fa fa-info-circle duration-150 cursor-pointer px-1"
               aria-hidden="true"
-              ><span class="px-1">About Us</span></i
+              ><span class="px-1">About Us </span></i
             >
           </button>
 
