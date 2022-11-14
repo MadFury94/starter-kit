@@ -7,8 +7,8 @@
           <!-- menu -->
           <div class="flex space-x-4">
             <!-- logo -->
-            <div class="flex items-center px-2">
-              <a href="" class="flex items-center space-x-2 py-5 px-2">
+            <div class="flex items-center px-8">
+              <a href="" class="flex items-center space-x-2 px-2">
                 <h1 class="text-2xl font-extrabold text-app-secondary-500">
                   Starter<span
                     class="text-2xl font-extrabold text-app-primary-500"
@@ -76,10 +76,7 @@
           </div>
           <!-- button show mobile menu -->
           <div class="md:hidden flex items-center">
-            <button
-              @click="showMobileMenu = !showMobileMenu"
-              class="py-5 px-16"
-            >
+            <button @click="showMobileMenu = !showMobileMenu" class="py-5 px-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -118,7 +115,7 @@
       ><a
         href=""
         class="block py-2 px-4 bg-white hover:text-app-primary-500 hover:font-semibold"
-        >PROJECTSS</a
+        >PROJECTS</a
       >
 
       <button

@@ -1,6 +1,9 @@
 <template>
+  <!-- Mobile view -->
   <div class="grid lg:grid-cols-2 md:grid-cols-1">
-    <div class="relative shadow-2xl shadow-app-secondary sm:rounded">
+    <div
+      class="relative shadow-2xl shadow-app-secondary sm:rounded lg:order-last"
+    >
       <div class="inset-0">
         <img class="" src="/Smoking-Flare.png" />
       </div>
