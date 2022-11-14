@@ -27,7 +27,7 @@
         facility is located in
         <span class="" v-html="companyInformation.addresses.address2"> </span>
       </p>
-      <div class="px-2 py-2">
+      <div class="py-2">
         <button
           class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
         >

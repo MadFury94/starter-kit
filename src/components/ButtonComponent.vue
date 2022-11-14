@@ -25,7 +25,7 @@
 defineProps({
   text: {
     type: String,
-    default: "j",
+    default: "",
   },
 });
 </script>

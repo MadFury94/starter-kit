@@ -1,5 +1,5 @@
 <template>
-  <div class="grid place-content-center">
+  <div>
     <div
       class="flex w-max bg-app-primary-100 border-white font-semibold p-2 border-2 rounded-lg h text-white"
     >

@@ -8,7 +8,7 @@
         </div>
       </div>
 
-      <div class="py-20 lg:pr-48 px-2">
+      <div class="py-20 lg:pr-48 lg:px-8 px-2">
         <SmallButton class="pr-72 lg:pr-64" />
         <h1
           class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
@@ -27,7 +27,7 @@
           At dolor dolores? Aut veniam esse ut officiis reprehenderit non
           deserunt omnis est sapiente illo vel vitae facere non galisum sunt.
         </p>
-        <div class="px-3">
+        <div>
           <button
             class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
           >
@@ -39,7 +39,7 @@
             >
           </button>
 
-          <!-- <ButtonComponent text="New One" /> -->
+          <ButtonComponent class="bg-red-500" text="New One" />
         </div>
         <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
           <p class="">
@@ -49,7 +49,6 @@
             reprehenderit non deserunt omnis est sapiente illo vel vitae facere
             non galisum sunt.
           </p>
-          <div class="grid place-content-center"></div>
         </BaseModal>
       </div>
     </div>
