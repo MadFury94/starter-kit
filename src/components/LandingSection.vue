@@ -43,9 +43,9 @@
         </div>
         <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
           <p class="">
-            We at PrrLorem ipsum dolor sit amet. Cum tenetur atque vel
-            distinctio galisum eum distinctio pariatur et esse recusandae sed
-            voluptatem temporibus At dolor dolores? Aut veniam esse ut officiis
+            We at Lorem ipsum dolor sit amet. Cum tenetur atque vel distinctio
+            galisum eum distinctio pariatur et esse recusandae sed voluptatem
+            temporibus At dolor dolores? Aut veniam esse ut officiis
             reprehenderit non deserunt omnis est sapiente illo vel vitae facere
             non galisum sunt.
           </p>
