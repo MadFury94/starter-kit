@@ -28,7 +28,7 @@
         <span class="" v-html="companyInformation.addresses.address2"> </span>
       </p>
       <div class="py-2">
-        <button
+        <!-- <button
           class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
         >
           <i
@@ -37,7 +37,12 @@
             aria-hidden="true"
             ><span class="px-1">About Us</span></i
           >
-        </button>
+        </button> -->
+        <ButtonComponent
+          class="duration-150 cursor-pointer"
+          @click="toggleModal"
+          text="About Us"
+        />
       </div>
     </div>
   </div>
@@ -97,6 +102,7 @@ import { ref } from "vue";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 import { companyInformation } from "../../public/store/store";
 import SmallButton from "./SmallButton.vue";
+import ButtonComponent from "./ButtonComponent.vue";
 
 const services = ref([
   {

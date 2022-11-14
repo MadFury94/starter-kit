@@ -28,7 +28,7 @@
           deserunt omnis est sapiente illo vel vitae facere non galisum sunt.
         </p>
         <div>
-          <button
+          <!-- <button
             class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
           >
             <i
@@ -37,9 +37,13 @@
               aria-hidden="true"
               ><span class="px-1">About Us </span></i
             >
-          </button>
+          </button> -->
 
-          <ButtonComponent class="bg-red-500" text="New One" />
+          <ButtonComponent
+            class="duration-150 cursor-pointer"
+            @click="toggleModal"
+            text="About Us"
+          />
         </div>
         <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
           <p class="">
