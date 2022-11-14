@@ -8,7 +8,7 @@
         </div>
       </div>
 
-      <div class="py-20 lg:pr-48 px-20">
+      <div class="py-20 lg:pr-48 px-2">
         <SmallButton class="pr-72 lg:pr-64" />
         <h1
           class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
@@ -39,7 +39,7 @@
             >
           </button>
 
-          <!-- <ButtonComponent> </ButtonComponent> -->
+          <!-- <ButtonComponent text="New One" /> -->
         </div>
         <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
           <p class="">
@@ -62,6 +62,7 @@ import BaseModal from "./BaseModal.vue";
 import { companyInformation } from "../../public/store/store";
 import ButtonComponent from "./ButtonComponent.vue";
 import SmallButton from "./SmallButton.vue";
+// import ButtonComponent from "./ButtonComponent.vue";
 
 const modalActive = ref(false);
 const toggleModal = () => {

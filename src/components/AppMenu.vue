@@ -40,13 +40,13 @@
                 >
                 <a
                   href="/"
-                  class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                  class="px-2 py-5 hover:text-app-primary-500 hover:font-semibold"
                   >PROJECTS</a
                 >
 
                 <a
                   href="/"
-                  class="px-2 py-5 hover:text-app-secondary hover:font-semibold"
+                  class="px-2 py-5 hover:text-app-primary-500 hover:font-semibold"
                   >CONTACT US</a
                 >
               </div>

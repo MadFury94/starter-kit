@@ -1,7 +1,8 @@
 <template>
   <div>
-    <button
+    <div
       class="flex bg-app-primary-500 border-white font-semibold p-2 border-2 rounded-lg hover:bg-app-secondary-500 text-white hover:text-white"
+      :text="text"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,10 +17,17 @@
           d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
         />
       </svg>
-    </button>
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  text: {
+    type: String,
+    default: "j",
+  },
+});
+</script>
 
 <style lang="scss" scoped></style>

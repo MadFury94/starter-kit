@@ -8,7 +8,7 @@
         <img class="" src="/Smoking-Flare.png" />
       </div>
     </div>
-    <div class="py-10 lg:pr-48 px-20">
+    <div class="py-10 lg:pr-48 px-2">
       <SmallButton class="pr-72 lg:pr-64" />
       <h1
         class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <div class="mx-auto w-full max-w-4xl px-2 py-4 sm:px-2">
+  <div class="mx-auto w-full max-w-4xl px-2 py-16 sm:px-2">
     <TabGroup>
       <TabList
         class="flex space-x-1 border-t-8 border-app-primary-500 bg-[#f4f4f4] p-1"
