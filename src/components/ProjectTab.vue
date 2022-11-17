@@ -1,14 +1,12 @@
 <template>
   <!-- Mobile view -->
   <div class="grid lg:grid-cols-2 md:grid-cols-1">
-    <div
-      class="relative shadow-2xl shadow-app-secondary sm:rounded lg:order-last"
-    >
+    <div class="lg:order-last">
       <div class="inset-0">
-        <img class="" src="/Smoking-Flare.png" />
+        <img class="" src="/equip.png" />
       </div>
     </div>
-    <div class="py-10 lg:pr-48 px-2">
+    <div class="py-10 px-2">
       <SmallButton class="pr-72 lg:pr-64" />
       <h1
         class="text-app-primary border-l-4 px-1 py-2 border-app-primary-500 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
