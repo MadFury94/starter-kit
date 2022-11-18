@@ -20,9 +20,9 @@
       </h2>
 
       <p class="">
-        We have in our employ experienced and professionally qualified personnel
-        in fabrication and construction field of services. Our fabrication
-        facility is located in
+        We have in our employ a lot of experienced and professionally qualified
+        personnel in fabrication and construction field of services. Our
+        fabrication facility is located in
         <span class="" v-html="companyInformation.addresses.address2"> </span>
       </p>
       <div class="py-2">
